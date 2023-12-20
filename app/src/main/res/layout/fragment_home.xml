@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
     tools:context=".presentation.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+ <com.google.android.material.imageview.ShapeableImageView
+     android:id="@+id/shapeableImageView"
+     android:layout_width="250dp"
+     android:layout_height="250dp"
+     android:layout_marginTop="75dp"
+     android:scaleType="centerCrop"
+     android:src="@drawable/los_pollos"
+     app:circularflow_radiusInDP="50dp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
 
-</FrameLayout>
+ <TextView
+     android:id="@+id/greetingTxt"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:padding="8dp"
+     android:textAlignment="center"
+     android:textColor="@color/Purple"
+     android:textSize="26sp"
+     app:layout_constraintEnd_toEndOf="@id/shapeableImageView"
+     app:layout_constraintStart_toStartOf="@id/shapeableImageView"
+     app:layout_constraintTop_toBottomOf="@+id/shapeableImageView"
+     android:layout_marginTop="36dp"
+     tools:text="Hello User!" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
