@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "901119783231",
+    "project_id": "hola-50381",
+    "storage_bucket": "hola-50381.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901119783231:android:5f14b296437c685a5e238a",
+        "android_client_info": {
+          "package_name": "com.brian.hola"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6QnKiK5EXS_V2F5Sx_EnpXOsWff9WMBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
