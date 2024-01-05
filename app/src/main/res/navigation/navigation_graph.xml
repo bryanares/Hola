@@ -7,12 +7,16 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.brian.hola.presentation.HomeFragment"
+        android:name="com.brian.hola.features.greeting.presentation.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <argument
+            android:name="user_id"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.brian.hola.features.login.LoginFragment"
+        android:name="com.brian.hola.features.auth.presentation.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -24,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/signupFragment"
-        android:name="com.brian.hola.features.signup.SignupFragment"
+        android:name="com.brian.hola.features.auth.presentation.signup.SignupFragment"
         android:label="fragment_signup"
         tools:layout="@layout/fragment_signup" >
         <action
