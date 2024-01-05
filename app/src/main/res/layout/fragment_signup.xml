@@ -7,7 +7,7 @@
     android:background="@drawable/loginbkg_1"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".features.signup.SignupFragment">
+    tools:context=".features.auth.presentation.signup.SignupFragment">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

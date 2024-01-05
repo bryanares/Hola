@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@drawable/loginbkg_1"
-    tools:context=".features.login.LoginFragment">
+    tools:context=".features.auth.presentation.login.LoginFragment">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/Purple"/>
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/loginEmail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -48,7 +48,7 @@
                 android:textColorHighlight="@color/cardview_dark_background"
                 android:layout_marginTop="40dp"
                 />
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/loginPassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
