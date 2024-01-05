@@ -1,4 +1,4 @@
-package com.brian.hola.features.signup
+package com.brian.hola.features.auth.presentation.signup
 
 import android.os.Bundle
 import android.view.LayoutInflater
