@@ -1,4 +1,8 @@
 package com.brian.hola.features.auth.domain.model
 
-class AuthUiState {
-}
+data class AuthUiState(
+    val isLoading: Boolean = false,
+    val isSuccessful: Boolean = false,
+    val error: String? = null,
+    val userId: String? = null
+)
